@@ -1,0 +1,3 @@
+001		Mario_Rossi 	25.4
+002		Giuseppe_Verdi 	26.0
+003		Anna_Bianchi 	28.3
