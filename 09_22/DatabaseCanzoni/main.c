@@ -116,7 +116,10 @@ int main(void) {
                     printf("Problemi con il caricamento del database\n");
                     printf("Artista non modificato\n");
                 }
-                break; 
+                break;
+
+            default:
+                printf("Inserisci un carattere corretto\n"); 
             
         }
     }
