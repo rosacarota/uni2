@@ -133,21 +133,23 @@ int cancella_artista(char *nome, char *nome_file) {
         else {
             char nome_tmp[30];
             char canzone_tmp[30];
+            
+            printf("\n[Canzoni Cancellate]\n");
 
-           //Correggere 
-            printf("\n[Canzoni cancellate]\n");
-            while(!feof(f_in)) {
-                
-                if((strcmp(nome, nome_tmp)) != 0) {
-                    flag = 1;
-                    fprintf(f_tmp, "%s\t %s\n", nome, canzone_tmp);
+            while (!feof(f_in) && (fscanf(f_in, "%s%s", nome_tmp, canzone_tmp)) == 2) {
+
+                if ((strcmp(nome_tmp, nome)) != 0) {
+                    fprintf(f_tmp, "%s\t %s\n", nome_tmp, canzone_tmp); 
                 }
                 else {
+                    flag = 1;
                     printf("- %s\n", canzone_tmp);
                 }
+
             }
-            
+
             putchar('\n');
+            
 
             fclose(f_in);
             fclose(f_tmp);

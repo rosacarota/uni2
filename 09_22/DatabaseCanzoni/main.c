@@ -109,12 +109,12 @@ int main(void) {
                 valido = cancella_artista(nome, nome_file);
                 
                 if (valido == 0) 
-                    printf("\nArtista non trovato\n\n");
+                    printf("Artista non trovato\n\n");
                 else if (valido == 1)
                     break;
                 else if (valido == -1){
-                    printf("\nProblemi con il caricamento del database\n");
-                    printf("\nArtista non modificato\n");
+                    printf("Problemi con il caricamento del database\n");
+                    printf("Artista non modificato\n");
                 }
                 break; 
             
