@@ -1,6 +1,6 @@
-Pink_floyd   Another_Brick_in_the_wall
-Queen    Bohemian_Rapsody
-Queen    Killer_Queen
-Queen    I_want_to_break_free
-Alt-j    Taro
-Alt-j    Breezeblocks
+Pink_floyd	 Another_Brick_in_the_wall
+Queen	 Bohemian_Rapsody
+Queen	 I_want_to_break_free
+Queen	 Killer_Queen
+Alt-j	 Breezeblocks
+Alt-j	 Taro
