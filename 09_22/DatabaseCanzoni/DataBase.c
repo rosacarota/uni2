@@ -56,23 +56,23 @@ int inserisci_canzone(char *nome_new, char *canzone_new, char *nome_file) {
 int inserisci_canzone(char *nome_new, char *canzone_new, char *nome_file) {
 FILE *fp;
     FILE *ftmp;
-    char nomeArtistaLettura[LEN+1];
-    char nomeCanzoneLettura[LEN+1];
+    char nomeArtistaLettura[30];
+    char nomeCanzoneLettura[30];
     int inserito = 0;
     
-    if ((fp = fopen(nomeFile, "r")) == NULL) return -1;
+    if ((fp = fopen(nome_file, "r")) == NULL) return -1;
     if ((ftmp = fopen("tmp", "w")) == NULL) return -1;
     
     // Se devo inserire la prima canzone
     char c = fgetc(fp);
     if (c == EOF) {
-        fprintf(ftmp, "%s\t %s\n", canzone.artista.nome, canzone.titolo);
+        fprintf(ftmp, "%s\t %s\n", nome_new, canzone_new);
 
         fclose(fp);
         fclose(ftmp);
 
-        remove(nomeFile);
-        rename("tmp", nomeFile);
+        remove(nome_file);
+        rename("tmp", nome_file);
 
         return 1;
     }
@@ -83,20 +83,20 @@ FILE *fp;
             break;
 
         // Stesso nome artista
-        if (!inserito && strcmp(canzone.artista.nome ,nomeArtistaLettura) == 0) {
+        if (!inserito && strcmp(nome_new, nomeArtistaLettura) == 0) {
             // Canzone già esistente
-            if (strcmp(canzone.titolo, nomeCanzoneLettura) == 0)
+            if (strcmp(canzone_new, nomeCanzoneLettura) == 0)
                 return 0;
             // Canzone da aggiungere più piccola di quella letta, inserisco quella da aggiungere
-            else if (strcmp(canzone.titolo, nomeCanzoneLettura) < 0) {
+            else if (strcmp(canzone_new, nomeCanzoneLettura) < 0) {
                 inserito = 1;
-                fprintf(ftmp, "%s\t %s\n", canzone.artista.nome, canzone.titolo);
+                fprintf(ftmp, "%s\t %s\n", nome_new, canzone_new);
             }
         }
         // Il nome dell'artista da aggiungere è più piccolo di quello letto, inserisco quello da aggiungere
-        else if (!inserito && strcmp(canzone.artista.nome, nomeArtistaLettura) < 0) {
+        else if (!inserito && strcmp(nome_new, nomeArtistaLettura) < 0) {
             inserito = 1;
-            fprintf(ftmp, "%s\t %s\n", canzone.artista.nome, canzone.titolo);
+            fprintf(ftmp, "%s\t %s\n", nome_new, canzone_new);
         }
 
         // Aggiungo dopo la canzone che ho letto dal file
@@ -104,13 +104,13 @@ FILE *fp;
     }
     
     if (!inserito) 
-        fprintf(ftmp, "%s\t %s\n", canzone.artista.nome, canzone.titolo);
+        fprintf(ftmp, "%s\t %s\n", nome_new, canzone_new);
 
     fclose(fp);
     fclose(ftmp);
 
-    remove(nomeFile);
-    rename("tmp", nomeFile);
+    remove(nome_file);
+    rename("tmp", nome_file);
 
     return 1;
 }
