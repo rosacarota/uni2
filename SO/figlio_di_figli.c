@@ -10,7 +10,6 @@ int main () {
         putchar('\n');
         printf("Il valore di ritorno di fork del processo figlio: %d\n", value);
         putchar('\n');
-
     }
     else{
         putchar('\n');
@@ -22,10 +21,10 @@ int main () {
     }
 
     //padre che crea un figlio, e poi sia il padre che il figlio stanno creando un altro figlio
-
-    value2 = fork();
+    // devo controllare se la fork() funzioni o meno (se non vunziona restituisce -1)
    
     if (value > 0) {
+        value2 = fork();
         if(value2 == 0) {
             putchar('\n');
             printf("Nel secondo processo FIGLIO\n");
@@ -38,7 +37,6 @@ int main () {
             printf("Nel processo PADRE\n");
             printf("Il valore di ritorno della seconda fork: %d\n", value2);
             putchar('\n');
-            printf("PID PADRE: %d\n", getppid());
     
         }
     }
