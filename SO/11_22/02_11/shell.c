@@ -14,13 +14,12 @@ int main(void) {
         pid = fork();
         if (pid < 0) exit(1);
         
-        if (pid > 0) {
-           wait(NULL);
-            
+        if (pid == 0) {
+            if (execlp(comando, comando, NULL) == -1) 
+                exit(1);
         }
-        else if (pid == 0) {
-            execlp(comando, comando, NULL);
-        }
+        else if (pid > 0) 
+            wait(NULL);
 
     } while (1);
 }
