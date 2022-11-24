@@ -1,4 +1,10 @@
+#include <stdio.h>
+#include <wait.h>
+
 int main (void) {
+    pid_t pid;
+    int status;
+    
     // continuare
     if(pid == 0) {
         printf("figlio:syo per terminare\n");
