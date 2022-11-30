@@ -25,13 +25,13 @@ int main(void) {
         if(value2 < 0) exit(1); // controllo che la fork() non abbia dato errori
         if(value2 == 0) { // secondo figlio 
             printf("Il PID di mio padre %d\n", getppid()); // stampo il PID del padre
+            // Aggiunta del controllo per execlp()
             if((execlp("ls", "ls", NULL)) == -1) exit(1);  // eseguo il comando ls
         }
         else {
-            // controllo che la wait non abbia dato errori in entrambi 
-            // i casi
+            // controllo che la wait non abbia dato errori in entrambi i casi
             controllo1 = waitpid(value1, NULL, 0);
-            if(controllo1 <= 0) printf("ERROE in wait");
+            if(controllo1 <= 0) printf("ERRORE in wait");
             
             controllo2 = waitpid(value2, NULL, 0);
             if(controllo2 <= 0) printf("ERRORE in wait");
@@ -43,4 +43,4 @@ int main(void) {
             exit(1);
         }
     }
-}
+} // Aggiunta di questa parentesi
