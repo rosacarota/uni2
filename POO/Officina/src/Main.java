@@ -17,8 +17,10 @@ public class Main {
         o.addScheda(s2);
         o.addScheda(s3);
 
-        o.getNomeFile("Mammt");
+        o.getNomeFile("Officina");
         o.stampaVeicoli();
+
+
 
         /*
         BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new DataOutputStream(new FileOutputStream("ktm")));

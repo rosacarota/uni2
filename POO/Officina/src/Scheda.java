@@ -5,6 +5,7 @@ public class Scheda {
     private static int num_scheda_prog;
     private final int num_scheda;
     private Date dataArrivo;
+    //sbagliato enum
     public enum Stati {IN_RIPARAZIONE, RIPARATO, CONSEGNATO};
     private Stati stato;
 
@@ -59,6 +60,6 @@ public class Scheda {
                 "\nStato: " + stato +
                 "\nData arrivo: " + dataArrivo.getDay() + "/"
                                   + dataArrivo.getMonth() + "/"
-                                  + dataArrivo.getYear() + '\n';
+                                  + dataArrivo.getYear() + "\n\n";
     }
 }

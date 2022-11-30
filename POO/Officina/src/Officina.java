@@ -23,13 +23,11 @@ public class Officina {
     }
 
     public void stampaVeicoli() throws IOException {
-        FileWriter fout= new FileWriter(nome_file);
-        PrintWriter p = new PrintWriter(fout);
+        PrintWriter p = new PrintWriter(new FileWriter(nome_file));
 
         for(Scheda s: schede)
             p.print(s);
 
         p.close();
-        fout.close();
     }
 }
