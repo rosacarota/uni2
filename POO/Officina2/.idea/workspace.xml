@@ -1,7 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc05bee5-cff3-444d-b38f-8320063a9c6f" name="Changes" comment="" />
+    <list default="true" id="fc05bee5-cff3-444d-b38f-8320063a9c6f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/09_22/DataBase/DataBase.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../BD/09_22/DataBase/DataBase.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/09_22/DataBase/DataBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../BD/09_22/DataBase/DataBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/09_22/DataBase/DataBase.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../BD/09_22/DataBase/DataBase.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/09_22/DataBase/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../BD/09_22/DataBase/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/09_22/DataBase/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../BD/09_22/DataBase/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/09_22/DataBase/unica_funzione.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../BD/09_22/DataBase/unica_funzione.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/09_22/DataBase2.0/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../BD/09_22/DataBase2.0/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/09_22/DataBase2.0/canzoni" beforeDir="false" afterPath="$PROJECT_DIR$/../../BD/09_22/DataBase2.0/canzoni" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/09_22/DataBase2.0/database.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../BD/09_22/DataBase2.0/database.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/09_22/DataBase2.0/database.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../BD/09_22/DataBase2.0/database.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/09_22/DataBase2.0/dettagliArtisti" beforeDir="false" afterPath="$PROJECT_DIR$/../../BD/09_22/DataBase2.0/dettagliArtisti" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/09_22/DataBase2.0/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../BD/09_22/DataBase2.0/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/09_22/DataBase2.0/util.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../BD/09_22/DataBase2.0/util.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/09_22/DataBase2.0/util.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../BD/09_22/DataBase2.0/util.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/biblioteca.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../BD/biblioteca.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bottoncini/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Bottoncini/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bottoncini/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bottoncini/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bottoncini/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bottoncini/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bottoncini/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bottoncini/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bottoncini/Bottoncini.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bottoncini/Bottoncini.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bottoncini/src/Bottoncino.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bottoncini/src/Bottoncino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bottoncini/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bottoncini/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clone/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Clone/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/Hotel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/Hotel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/src/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/src/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/src/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/src/Genitore.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/src/Genitore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Money/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Money/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Money/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Money/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Money/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Money/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Money/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Money/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Money/Money.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Money/Money.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Money/src/ContoCorrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Money/src/ContoCorrente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Money/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Money/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Officina/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Officina/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Officina/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Officina/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Officina/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Officina/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Officina/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Officina/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Officina/Officina.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Officina/Officina.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Officina/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Officina/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Officina/src/Officina.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Officina/src/Officina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Officina/src/Scheda.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Officina/src/Scheda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Officina2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Officina2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Auto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Auto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prova/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Prova/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prova/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Prova/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prova/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Prova/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Prova/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prova/Prova.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Prova/Prova.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prova/src/ClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Prova/src/ClassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rubrica/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Rubrica/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rubrica/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Rubrica/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rubrica/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Rubrica/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rubrica/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Rubrica/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rubrica/Rubrica2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Rubrica/Rubrica2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rubrica/src/Contatto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Rubrica/src/Contatto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rubrica/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Rubrica/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rubrica/src/Rubrica.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Rubrica/src/Rubrica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/Stack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/Stack.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/src/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/src/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/Test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/Test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/src/MoneyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/src/MoneyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/src/it/unisa/lp2/money/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/src/it/unisa/lp2/money/Coin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/src/it/unisa/lp2/money/Purse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/src/it/unisa/lp2/money/Purse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SO/10_22/10_10/come_non_si_creano_figli.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../SO/10_22/10_10/come_non_si_creano_figli.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SO/10_22/10_10/figlio_di_figli.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../SO/10_22/10_10/figlio_di_figli.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SO/10_22/10_10/fork.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../SO/10_22/10_10/fork.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SO/10_22/10_10/processi.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../SO/10_22/10_10/processi.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SO/10_22/19_10/fibonacci_e_fattoriale.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../SO/10_22/19_10/fibonacci_e_fattoriale.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SO/10_22/19_10/wait.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../SO/10_22/19_10/wait.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SO/10_22/26_10/exec.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../SO/10_22/26_10/exec.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SO/10_22/26_10/wait_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../SO/10_22/26_10/wait_2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SO/11_22/02_11/shell.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../SO/11_22/02_11/shell.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SO/11_22/23_11/aspetta_e_esci.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../SO/11_22/23_11/aspetta_e_esci.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SO/11_22/23_11/aspetta_e_esci_con_macro.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../SO/11_22/23_11/aspetta_e_esci_con_macro.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SO/11_22/23_11/prova_intercorso.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../SO/11_22/23_11/prova_intercorso.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SO/11_22/23_11/signal.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../SO/11_22/23_11/signal.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SO/11_22/30_11/killau_chiunque.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../SO/11_22/30_11/killau_chiunque.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SO/11_22/30_11/segnali.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../SO/11_22/30_11/segnali.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,13 +120,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,6 +136,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669822543452</updated>
       <workItem from="1669822545722" duration="1630000" />
+      <workItem from="1669826961299" duration="831000" />
     </task>
     <servers />
   </component>
