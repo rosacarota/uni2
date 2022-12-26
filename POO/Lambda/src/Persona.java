@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -28,8 +29,13 @@ public class Persona {
         persone.add(new Persona("Stellina", "Bau"));
         persone.add(new Persona("Stellina", "<3"));
 
+        Persona [] p = persone.toArray(new Persona[persone.size()]);
+
+        Arrays.sort(p, (p1, p2) -> p1.nome.compareTo(p2.nome));
+        System.out.println(p);
+
         // processElements(persone, p -> p.nome.charAt(0) == 'S', Persona::toString, System.out::println);
-        processElements(persone, p -> p.nome.charAt(0) == 'S', p -> p.toString(), s -> System.out.println(s));
+        processElements(persone, per -> per.nome.charAt(0) == 'S', per -> p.toString(), s -> System.out.println(s));
     }
 
     private static <X, Y> void processElements(Iterable<X> source, Predicate<X> tester,
