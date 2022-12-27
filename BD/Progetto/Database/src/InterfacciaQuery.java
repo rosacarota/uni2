@@ -25,7 +25,8 @@ public class InterfacciaQuery {
 //        String password = scanner.nextLine();
 
 //        database = new Database(databaseName, username, password);
-        database = new Database("ddl_progetto", "root", "");
+
+        database = new Database("ddl_progetto", "root", "password");
         query = new Query(database);
 
         database.connect();

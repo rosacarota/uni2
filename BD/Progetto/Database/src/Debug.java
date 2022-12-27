@@ -1,7 +1,7 @@
 import java.util.Calendar;
 import java.sql.Date;
 
-public class Debug {
+/* public class Debug {
     public static void main(String[] args) {
         Calendar c = Calendar.getInstance();
         c.setTime(new Date(System.currentTimeMillis()));
@@ -9,4 +9,4 @@ public class Debug {
         Date d = new Date(c.getTimeInMillis());
         System.out.println(d);
     }
-}
+}*/
