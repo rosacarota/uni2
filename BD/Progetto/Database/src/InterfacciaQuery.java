@@ -26,7 +26,7 @@ public class InterfacciaQuery {
 
 //        database = new Database(databaseName, username, password);
 
-        database = new Database("ddl_progetto", "root", "password");
+        database = new Database("ddl_progetto", "root", "");
         query = new Query(database);
 
         database.connect();

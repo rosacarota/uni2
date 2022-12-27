@@ -98,6 +98,7 @@ public class Query {
         System.out.println("\n-------------- Cliente registrato --------------");
     }
 
+
     public void query5() throws SQLException {
         Statement statement;
         ResultSet resultSet;
