@@ -1,4 +1,5 @@
 import java.sql.*;
+import java.time.Year;
 import java.util.Calendar;
 import java.util.Scanner;
 
@@ -15,11 +16,10 @@ public class Query {
         ResultSet resultSet;
 
         statement = database.getConnection().createStatement();
-        resultSet = statement.executeQuery("SELECT * FROM Cliente");
+        resultSet = statement.executeQuery("SELECT MAX(codiceStruttura) as MAX FROM StrutturaRicettiva");
 
-        for (int i = 0; resultSet.next(); i++)
-            System.out.println(i + " " + resultSet.getString("email"));
-
+        resultSet.next();
+        System.out.println(resultSet.getInt("MAX"));
         statement.close();
     }
 
@@ -98,12 +98,160 @@ public class Query {
         System.out.println("\n-------------- Cliente registrato --------------");
     }
 
+    public void query2() throws SQLException {
+        PreparedStatement statementStruttura, statementTipo = null;
+        String queryStruttura = "INSERT INTO StrutturaRicettiva (annoDiIscrizione, nome, citta, via, cap) " +
+                "VALUES (?, ?, ?, ?, ?)";
+        String queryTipo;
+        char tipo;
+        int StrutturaRicettiva;
+
+        statementStruttura = database.getConnection().prepareStatement(queryStruttura);
+
+        System.out.println("-------------- Inserisci Struttura --------------");
+
+        // Richiesta informazioni struttura ricettiva
+        statementStruttura.setInt(1, Year.now().getValue());
+
+        System.out.print("Inserire il nome: ");
+        statementStruttura.setString(2, scanner.nextLine());
+
+        System.out.print("Inserire la città: ");
+        statementStruttura.setString(3, scanner.nextLine());
+
+        System.out.print("Inserire la via: ");
+        statementStruttura.setString(4, scanner.nextLine());
+
+        System.out.print("Inserire il cap: ");
+        statementStruttura.setString(5, scanner.nextLine());
+
+        // Ottenimento ultima struttura inserita
+        Statement statement;
+        ResultSet resultSet;
+
+        statement = database.getConnection().createStatement();
+        resultSet = statement.executeQuery("SELECT MAX(codiceStruttura) as Max FROM StrutturaRicettiva");
+
+        resultSet.next();
+        StrutturaRicettiva = resultSet.getInt("Max") + 1;
+        statement.close();
+
+        // Richiesta di tipologia
+        System.out.println("\n1. Hotel\n2. Ostello\n3. Appartamento\n");
+        System.out.print("Quale tipo di struttura ricettiva si desidera registrare?: ");
+        tipo = scanner.nextLine().charAt(0);
+
+        switch (tipo) {
+            case '1' -> {
+                queryTipo = "INSERT INTO Hotel VALUES (?)";
+                statementTipo = database.getConnection().prepareStatement(queryTipo);
+
+                statementTipo.setInt(1, StrutturaRicettiva);
+            }
+            case '2' -> {
+                queryTipo = "INSERT INTO Ostello (StrutturaRicettiva, prezzoNottePostoLetto, postiLettoTotali) " +
+                        "VALUES(?, ?, ?)";
+                statementTipo = database.getConnection().prepareStatement(queryTipo);
+
+                statementTipo.setInt(1, StrutturaRicettiva);
+
+                System.out.print("Inserire il prezzo a notte per posto letto: ");
+                statementStruttura.setFloat(2, scanner.nextFloat());
+
+                System.out.print("Inserire i posti letto totali: ");
+                statementStruttura.setInt(3, scanner.nextInt());
+            }
+            case '3' -> {
+                queryTipo = "INSERT INTO Appartamento (StrutturaRicettiva, prezzoNotte, postiLetto, metriQuadri, vani) " +
+                        "VALUES (?, ?, ?, ?, ?)";
+                statementTipo = database.getConnection().prepareStatement(queryTipo);
+
+                statementTipo.setInt(1, StrutturaRicettiva);
+
+                System.out.print("Inserire il prezzo a notte: ");
+                statementStruttura.setFloat(2, scanner.nextFloat());
+
+                System.out.print("Inserire i posti letto totali: ");
+                statementStruttura.setInt(3, scanner.nextInt());
+
+                System.out.print("Inserire i metri quadri: ");
+                statementStruttura.setInt(4, scanner.nextInt());
+
+                System.out.print("Inserire i vani quadri: ");
+                statementStruttura.setInt(5, scanner.nextInt());
+            }
+            default -> System.out.println("Codice struttura non coretto");
+        }
+
+        if (statementTipo != null) {
+            statementStruttura.execute();
+            statementStruttura.close();
+            statementTipo.execute();
+            statementTipo.close();
+
+            System.out.println("-------------- Struttura Registrata --------------");
+        }
+        else {
+            statementStruttura.close();
+        }
+    }
+
+    public void query4() throws SQLException {
+        PreparedStatement statementEmail;
+        ResultSet resultSet;
+        String email;
+
+        System.out.println("-------------- Aggiornamento a tessera premium --------------");
+        System.out.print("Inserire l'email del cliente: ");
+        email = scanner.nextLine();
+
+        statementEmail = database.getConnection().prepareStatement("SELECT email FROM Cliente " +
+                "WHERE email = ?");
+        statementEmail.setString(1, email);
+        resultSet = statementEmail.executeQuery();
+
+        if (!resultSet.next())
+            System.out.println("Il cliente non è presente nel database");
+        else {
+            PreparedStatement statementPremium;
+
+            statementPremium = database.getConnection().prepareStatement("SELECT tipo " +
+                    "FROM TesseraFedelta WHERE Cliente = ?");
+            statementPremium.setString(1, email);
+            resultSet = statementPremium.executeQuery();
+
+            resultSet.next();
+            String tipo = resultSet.getString("tipo");
+
+            if (tipo.equals("Premium"))
+                System.out.println("Il cliente è già premium");
+            else if (tipo.equals("Standard")) {
+                PreparedStatement updatePremium = database.getConnection().prepareStatement("UPDATE " +
+                        "TesseraFedelta SET tipo = ?, scontoPremium = ? WHERE Cliente = ?");
+
+                updatePremium.setString(1, "Premium");
+
+                System.out.print("Inserire lo sconto da assegnare: ");
+                updatePremium.setInt(2, scanner.nextInt());
+
+                updatePremium.setString(3, email);
+
+                updatePremium.execute();
+                updatePremium.close();
+
+                System.out.println("\n-------------- Aggiornamento effettuato --------------");
+            }
+
+            statementPremium.close();
+        }
+
+        statementEmail.close();
+    }
 
     public void query5() throws SQLException {
         Statement statement;
         ResultSet resultSet;
-        String query = "SELECT * FROM StrutturaRicettiva " +
-                "ORDER BY citta";
+        String query = "SELECT * FROM StrutturaRicettiva ORDER BY citta";
 
         statement = database.getConnection().createStatement();
         resultSet = statement.executeQuery(query);

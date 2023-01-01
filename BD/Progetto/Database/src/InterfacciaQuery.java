@@ -25,7 +25,6 @@ public class InterfacciaQuery {
 //        String password = scanner.nextLine();
 
 //        database = new Database(databaseName, username, password);
-
         database = new Database("ddl_progetto", "root", "");
         query = new Query(database);
 
@@ -39,9 +38,9 @@ public class InterfacciaQuery {
             System.out.println("\n-------------- Interfaccia query --------------");
             System.out.println("""
                     1. Esegui query 1 (Registrazione cliente)
-                    2. Esegui query 2
+                    2. Esegui query 2 (Registrazione struttura ricettiva)
                     3. Esegui query 3
-                    4. Esegui query 4
+                    4. Esegui query 4 (Aggiornamento a tessera premium)
                     5. Esegui query 5 (Visualizzazione strutture ricettive per città)
                     0. Esci
                     """);
@@ -53,9 +52,9 @@ public class InterfacciaQuery {
 
             switch (sel) {
                 case '1' -> query.query1();
-                case '2' -> System.out.println("Paolone");
-                case '3' -> System.out.println("Paoletto");
-                case '4' -> query.queryTest();
+                case '2' -> query.query2();
+                case '3' -> query.queryTest();
+                case '4' -> query.query4();
                 case '5' -> query.query5();
                 case '0' -> System.exit(0);
                 default -> System.out.println("Paolissimo");
