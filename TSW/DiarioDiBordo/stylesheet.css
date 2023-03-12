@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+body {
+  background-color: #FFFDF1 ;
+  text-align: center;
+}
+
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+}
+
+h2 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 400;
+}
+
+.giorno img{
+  height: 50%;
+  width: 50%;
+}
+
+.giorno h2 {
+  margin-top: 3%;
+}
+
+#banner {
+  height: 50%;
+  width: 50%;
+}
+
+#aereoporto {
+  height: 25%;
+  width: 25%;
+}
+
+#aereo{
+  height: 28%;
+  width: 28%;
+}
+
+.lista {
+  display: inline-block; 
+  text-align: left;
+  margin-top: 5%;
+}
+
+#ul, #ol{
+  margin-top: -2%;
+}
